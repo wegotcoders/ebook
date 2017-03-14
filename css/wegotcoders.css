@@ -1,0 +1,57 @@
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+}
+
+.reveal  {
+  font-size: 16px;
+}
+
+.logo {
+  background: url('../images/WEGOTCODERS_b.png') no-repeat right top;
+  display: block;
+  background-size: contain;
+  text-indent: -300%;
+  overflow: hidden;
+  height: 2.5em;
+  padding-right: 1em;
+  /* border-bottom: 3px solid #C51F1F; */
+  margin-top: 0;
+}
+
+.reveal .slide--dark * {
+  color: white;
+}
+
+.slide--dark .logo {
+  background-image: url('/images/WEGOTCODERS_b.png');
+}
+
+.reveal .logo--main {
+  background: url('/images/WEGOTCODERS_color.jpg') no-repeat right top;
+  background-position: center top;
+  font-size: 5em;
+}
+
+.reveal .bg--ghost {
+  background: rgba(0,0,0,0.6);
+  padding: 2em;
+}
+
+.reveal .leading-slide {
+  font-size: 1.5em;
+}
+
+.leading-slide h1, .leading-slide h2 {
+  text-shadow: 2px 2px 2px #333;
+}
+
+.leading-slide h2 {
+  font-size: 1rem;
+  font-size: 1em;
+}
+
+.reveal section.left {
+  text-align: left;
+}
