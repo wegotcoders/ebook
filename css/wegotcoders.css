@@ -80,8 +80,19 @@ header {
   font-size: 1em;
 }
 
-.reveal section.left {
+.reveal .left {
   text-align: left;
+}
+
+.reveal .center {
+  text-align: center;
+}
+
+.reveal section img {
+  margin: 0;
+  box-shadow: none;
+  background: none;
+  border: 0;
 }
 
 .reveal li {
@@ -90,4 +101,34 @@ header {
 
 p.lead {
   font-size: 1.2em;
+}
+
+.reveal .c-btn {
+  display: inline-block;
+  vertical-align: middle;
+  font: inherit;
+  text-align: center;
+  margin: 0;
+  cursor: pointer;
+    padding: 12px 24px;
+  transition: 0.33333s;
+  border-radius: 3px;
+}
+
+.reveal .c-btn--primary {
+  background-color: #4a8ec2;
+  color: white;
+}
+
+#course-outline {
+  margin-top: 1em;
+}
+
+@media (min-width: 46.25em) {
+  #course-outline {
+    display: block;
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
