@@ -1426,7 +1426,7 @@
 	 * target element.
 	 *
 	 * remaining height = [ configured parent height ] - [ current parent height ]
-	 * 
+	 *
 	 * @param {HTMLElement} element
 	 * @param {number} [height]
 	 */
@@ -3121,8 +3121,8 @@
 			verticalSlides = dom.wrapper.querySelectorAll( VERTICAL_SLIDES_SELECTOR );
 
 		var routes = {
-			left: indexh > 0 || config.loop,
-			right: indexh < horizontalSlides.length - 1 || config.loop,
+			left: (indexh > 0 || config.loop)  && (indexv == 0 || indexv === verticalSlides.length - 1),
+			right: (indexh < horizontalSlides.length - 1 || config.loop) && (indexv == 0 || indexv === verticalSlides.length - 1),
 			up: indexv > 0,
 			down: indexv < verticalSlides.length - 1
 		};
@@ -3900,7 +3900,7 @@
 			// If there are media elements with data-autoplay,
 			// automatically set the autoSlide duration to the
 			// length of that media. Not applicable if the slide
-			// is divided up into fragments. 
+			// is divided up into fragments.
 			// playbackRate is accounted for in the duration.
 			if( currentSlide.querySelectorAll( '.fragment' ).length === 0 ) {
 				toArray( currentSlide.querySelectorAll( 'video, audio' ) ).forEach( function( el ) {
