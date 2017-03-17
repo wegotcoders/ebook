@@ -68,7 +68,7 @@ header h2 {
 
 .reveal .bg--ghost {
   background: rgba(0,0,0,0.6);
-  padding: 2em;
+  padding: 1.4em;
 }
 
 .reveal .leading-slide {
@@ -160,4 +160,8 @@ p.lead {
 
 blockquote {
   width: inherit;
+}
+
+.reveal .slides > section, .reveal .slides > section > section {
+  padding: 0;
 }
