@@ -9,7 +9,7 @@ header h2 {
 }
 
 .reveal  {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 @media (min-width: 46.25em) {
@@ -164,4 +164,12 @@ blockquote {
 
 .reveal .slides > section, .reveal .slides > section > section {
   padding: 0;
+}
+
+.reveal h4 {
+  margin-bottom: 0.5em;
+}
+
+.reveal p {
+  margin: 1em 0;
 }
