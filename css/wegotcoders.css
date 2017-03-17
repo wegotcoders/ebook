@@ -4,6 +4,10 @@ header {
   z-index: 1000;
 }
 
+header h2 {
+  margin-top: 0;
+}
+
 .reveal  {
   font-size: 16px;
 }
