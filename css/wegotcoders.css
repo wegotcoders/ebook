@@ -135,3 +135,25 @@ p.lead {
     font-size: 2em;
   }
 }
+
+.reveal dl {
+  margin-left: 0;
+  width:100%;
+}
+
+.reveal dt {
+  float: left;
+}
+
+.reveal dt:after {
+  content: ":";
+  margin-right: 0.5em;
+}
+
+.reveal dd {
+  margin: 0;
+}
+
+blockquote {
+  width: inherit;
+}
