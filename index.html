@@ -661,9 +661,10 @@
 							our immersive courses and workshops and apply now!</p>
 
 							<div class="center" style="margin-bottom: 2em">
-								<a href="https://www.wegotcoders.com/courses" class="navigate-down c-btn c-btn--primary">Apply Now!</a>
+								<a href="https://www.wegotcoders.com/courses" class="navigate-down c-btn c-btn--primary external-link" onclick="window.location='https://www.wegotcoders.com/courses'">Apply Now!</a>
 							</div>
 
+							<!--
 							<h3>Want more flexibility?</h3>
 
 							<p>You can get started right now on our free on-line courses and
@@ -672,6 +673,7 @@
 							<div class="center">
 								<a href="https://learn.wegotcoders.com" class="navigate-down c-btn c-btn--primary">Get Started Now!</a>
 							</div>
+							-->
 						</div>
 					</section>
 				</section>
@@ -696,6 +698,12 @@
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
 			});
+
+			var links = document.getElementsByClassName("external-link");
+			for(var i = 0; i < links.length; i++) {
+				var link = links[i];
+				link.removeAttribute("disabled");
+			}
 		</script>
 	</body>
 </html>
